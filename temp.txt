@@ -1,0 +1,11 @@
+Cenário: Cadastro de usuário inválido
+    Dado que o usuário esteja na página de cadastro
+    Quando preencher os campos obrigatórios com dados inválidos
+    E clicar no botão de cadastro
+    Então os campos devem ficar destacados em vermelho
+
+Cenário: Cadastro de usuário com campos obrigatórios em branco
+    Dado que o usuário esteja na página de cadastro
+    Quando clicar no botão de cadastro sem preencher os campos obrigatórios
+    Então os campos obrigatórios devem ficar destacados em vermelho
+    

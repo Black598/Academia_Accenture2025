@@ -59,5 +59,3 @@ Cypress.Commands.add('generateUser', () => {
     return fakerName,fakerLastName,fakerEmail,fakerPassword,fakerAge,fakerSalary,fakerDepartment
 
 })
-
-cy.generateUser()

@@ -2,6 +2,7 @@ import {Given, When, Then, And} from 'cypress-cucumber-preprocessor/steps';
 
 Given('que o usuário esteja na página de cadastro', () => {
     cy.visit('/')
+    cy.intercept('GET', '/ads/*', { body: '' })
     cy.generateUser()
 });
 When('preencher os campos obrigatórios com dados válidos', () => {

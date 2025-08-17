@@ -103,7 +103,7 @@ Este projeto utiliza o Cypress com Cucumber para automação de testes end-to-en
 └── [CadastroEditExclui.cy.js](CadastroEditExclui.cy.js)<br>
 
 
-## Principais Componentes
+## Principais Componentes ⚙
 
 - **Cypress**: Framework de testes end-to-end.
 - **Cucumber (cypress-cucumber-preprocessor)**: Permite escrever cenários de teste em Gherkin.
@@ -113,7 +113,7 @@ Este projeto utiliza o Cypress com Cucumber para automação de testes end-to-en
 - **Custom Commands**: Comandos personalizados do Cypress para facilitar ações comuns.
 - **Pages**: Page Objects que encapsulam interações com elementos da interface.
 
-## Instalação
+## Instalação 👨🏾‍💻
 
 1. **Clone o repositório:**
    ```sh
@@ -130,7 +130,7 @@ Isso instalará:
 
 - @faker-js/faker
 
-## Como Executar os Testes
+## Como Executar os Testes😎
 1. **Abra o Cypress:**
     ```sh
     npx cypress open

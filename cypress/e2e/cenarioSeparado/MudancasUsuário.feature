@@ -19,9 +19,3 @@ Funcionalidade: Modificações nos Registros
         E clicar confirma alterações
         Então os campos incorretos devem ficar com bordas vermelhas
 
-        Cenário: Exclusão de usuário 
-            
-        Quando o usuário excluir seu registro
-        Então o campos deve deixar de existir
-
-

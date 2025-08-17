@@ -12,7 +12,10 @@ Cypress.Commands.add('pegarUltimoBotaoEditar', () => {
 
   cy.validarUltimaCadastrada()
   cy.get('@ultimaLinhaPreenchida').find('[id^="edit-record-"]').as('botaoEditar')
-  cy.get('@botaoEditar').click()
+})
+
+Cypress.Commands.add('clicarUltimoEdit',()=>{
+    cy.get('@botaoEditar').click()
 })
 
 Cypress.Commands.add('preencherEdit', () => {

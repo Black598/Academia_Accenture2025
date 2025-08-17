@@ -13,4 +13,6 @@ Given('que o usuário já realizou o registro', () => {
 
 When('o usuário edita seu registro', () => {
     cy.pegarUltimoBotaoEditar()
+    cy.wait(300)
+    cy.clicarUltimoEdit()
 })

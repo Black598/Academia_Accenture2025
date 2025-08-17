@@ -6,7 +6,7 @@ const salary_Field = '#salary'
 const department_Field = '#department'
 const btn_Submit = '#submit'
 const red_Invalid = '.form-control.is-invalid, .was-validated .form-control:invalid'
-const red_color = '#dc3545;'
+const red_color = 'rgb(220, 53, 69)'
 
 Cypress.Commands.add('pegarUltimoBotaoEditar', () => {
 

@@ -9,5 +9,5 @@ And('clicar confirma alterações',()=>{
 })
 
 Then('os campos incorretos devem ficar com bordas vermelhas',()=>{
-    cy.validaCampoVermelho()
+    cy.validarCampoVermelho()
 })

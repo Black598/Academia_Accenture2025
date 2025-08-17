@@ -13,7 +13,7 @@ Funcionalidade: Modificações nos Registros
     
         Então informações do usuário devem ser editadas
 
-        Cenário: Edição de usuário com informações inválidas
+    Cenário: Edição de usuário com informações inválidas
     
         E preencher com informações inválidas
         E clicar confirma alterações

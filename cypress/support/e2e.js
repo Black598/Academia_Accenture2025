@@ -18,7 +18,7 @@ import './commands'
 import './pages/Registro.page.js'
 import './pages/EditRegistro.page.js'
 import './pages/DeleteRegistro.pag.js'
-import './pages/Global.js'
+
 
 
 beforeEach(() => {

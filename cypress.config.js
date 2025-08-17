@@ -2,9 +2,9 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-        video: false,
-    viewportWidth: 1280,
-    viewportHeight: 720,
+    video: false,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
     watchForFileChanges: false,
     specPattern: 'cypress/e2e/**/*.feature',
     baseUrl:'https://demoqa.com/webtables',

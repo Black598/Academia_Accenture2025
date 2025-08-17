@@ -15,9 +15,10 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import './pages/register.js'
-
-
+import './pages/Registro.page.js'
+import './pages/EditRegistro.page.js'
+import './pages/DeleteRegistro.pag.js'
+import './pages/Global.js'
 
 
 beforeEach(() => {
@@ -56,74 +57,7 @@ beforeEach(() => {
     '/adservice.google.com/adsid/integrator.js',
     '/adservice.google.com/adsid/google_ads.js',
     '/googletagservices.com/',
-    '/partner.googleadservices.com/',
-    '/static.doubleclick.net/',
-    '/adclick.g.doubleclick.net/',
-    '/tpc.googlesyndication.com/',
-    '/googleads.g.doubleclick.net/',
-    '/googleads4.g.doubleclick.net/',
-    '/ad.doubleclick.net/',
-    '/adservice.google.com/',
-    '/adservice.google.com.br/',
-    '/adservice.google.com/adsid/',
-    '/adservice.google.com/pagead/',
-    '/adservice.google.com.br/pagead/',
-    '/adservice.google.com/adsid/integrator.js',
-    '/adservice.google.com/adsid/google_ads.js',
-    '/googletagservices.com/',
-    '/partner.googleadservices.com/',
-    '/static.doubleclick.net/',
-    '/adclick.g.doubleclick.net/',
-    '/tpc.googlesyndication.com/',
-    '/googleads.g.doubleclick.net/',
-    '/googleads4.g.doubleclick.net/',
-    '/ad.doubleclick.net/',
-    '/adservice.google.com/',
-    '/adservice.google.com.br/',
-    '/adservice.google.com/adsid/',
-    '/adservice.google.com/pagead/',
-    '/adservice.google.com.br/pagead/',
-    '/adservice.google.com/adsid/integrator.js',
-    '/adservice.google.com/adsid/google_ads.js',
-    '/googletagservices.com/',
-    '/partner.googleadservices.com/',
-    '/static.doubleclick.net/',
-    '/adclick.g.doubleclick.net/',
-    '/tpc.googlesyndication.com/',
-    '/googleads.g.doubleclick.net/',
-    '/googleads4.g.doubleclick.net/',
-    '/ad.doubleclick.net/',
-    '/adservice.google.com/',
-    '/adservice.google.com.br/',
-    '/adservice.google.com/adsid/',
-    '/adservice.google.com/pagead/',
-    '/adservice.google.com.br/pagead/',
-    '/adservice.google.com/adsid/integrator.js',
-    '/adservice.google.com/adsid/google_ads.js',
-    '/googletagservices.com/',
-    '/partner.googleadservices.com/',
-    '/static.doubleclick.net/',
-    '/adclick.g.doubleclick.net/',
-    '/tpc.googlesyndication.com/',
-    '/googleads.g.doubleclick.net/',
-    '/googleads4.g.doubleclick.net/',
-    '/ad.doubleclick.net/',
-    '/adservice.google.com/',
-    '/adservice.google.com.br/',
-    '/adservice.google.com/adsid/',
-    '/adservice.google.com/pagead/',
-    '/adservice.google.com.br/pagead/',
-    '/adservice.google.com/adsid/integrator.js',
-    '/adservice.google.com/adsid/google_ads.js',
-    '/googletagservices.com/',
-    '/partner.googleadservices.com/',
-    '/static.doubleclick.net/',
-    '/adclick.g.doubleclick.net/',
-    '/tpc.googlesyndication.com/',
-    '/googleads.g.doubleclick.net/',
-    '/googleads4.g.doubleclick.net/',
-    '/ad.doubleclick.net/',
-    
+
   ];
   ['GET','POST'].forEach((m) => block.forEach((p) => cy.intercept(m, p, { statusCode: 204, body: '' })));
 });
@@ -135,7 +69,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
   }
 
-  if (err.message.includes('googletagservices') || err.message.includes('doubleclick')) {
+  if (err.message.includes('googletagservices') || err.message.includes('doubleclick') || err.message.includes('ads')) {
     return false;
   }
 });

@@ -1,5 +1,10 @@
 import { Given, When, And } from 'cypress-cucumber-preprocessor/steps';
 
+Given('que o usuário esteja na página de cadastro', () => {
+    cy.visit('/')
+
+})
+
 Given('que o usuário já realizou o registro', () => {
     cy.visit('/')
     cy.gerarUser()

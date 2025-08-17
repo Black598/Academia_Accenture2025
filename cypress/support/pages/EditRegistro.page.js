@@ -40,3 +40,7 @@ Cypress.Commands.add('validarCampoVermelho',() => {
   cy.get(red_Invalid).should('have.css','border-color',red_color)
 })
 
+Cypress.Commands.add('',() => {
+
+  
+})

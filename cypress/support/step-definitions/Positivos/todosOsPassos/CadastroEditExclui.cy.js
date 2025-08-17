@@ -8,6 +8,7 @@ Given('que o usuário realizou um cadastro válido', () => {
 
 When('editar o seu usuário', () => {
     cy.validarUltimaCadastrada()
+    cy.wait(800)
     cy.pegarUltimoBotaoEditar()
     cy.gerarUser()
     cy.preencherEdit()
